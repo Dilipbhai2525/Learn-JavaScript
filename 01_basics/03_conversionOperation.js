@@ -35,3 +35,22 @@ console.log(numis);
 console.log(typeof numis);
 
 
+// ********************************* Operations *********************************
+let value = 3;
+let negValue = -3;
+console.log(negValue);
+
+let str1 = "dilip"
+let str2 = " kumar"
+let fullName = str1 + str2
+console.log(fullName);
+
+console.log(1 + "2");
+console.log("1" + 2);
+console.log(1 + 2 + "3");
+console.log(1 + "2" + 3);
+console.log((1 + 2) * 3 / 3);
+
+// link to study: 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+//mdn prefix and postfix js
