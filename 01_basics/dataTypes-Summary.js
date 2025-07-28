@@ -39,5 +39,45 @@ const anotherId = Symbol('123');
 console.log(id === anotherId); // false, because each Symbol is unique
 
 // typeof operator can be used to check the type of a variable
-console.log(typeof id); // "Symbol"
+// console.log(typeof id); // "Symbol"
+
+
+// ******************************************************************************
+
+// Stack (primitive), Heap (Non-Primitive)
+
+// Stack use thaay etle ek copy male 
+//Heap use thaay etle reference
+
+let myYoutubeName = "dilipChaudhary"; // Stack memory
+let user = {
+  name : 'haresh',
+  age : 25,
+  city : 'delhi'
+};    // Heap Memory
+
+// Memory is Stack example
+let myuser = "dilip";
+
+let userOne = myuser; // Stack memory, userOne is a copy of myuser
+userOne = "hitesh";
+
+console.log(userOne); // "hitesh"
+console.log(myuser); // "dilip"
+
+// Memory is Heap example
+let two = {
+  email : "hc@gmail.com",
+  age : 30
+};
+
+let three = two;
+three.email = "dilip@gmail.com";
+
+console.log(two.email);
+console.log(three.email);
+
+
+
+
 
